@@ -1,0 +1,15 @@
+body{
+    background-image: url(/Bilder/Orangebackground.jpeg);
+    background-repeat: no-repeat;
+}
+
+#snakeUp{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    transform: rotate(90deg);
+    
+}
+
+#snakeDown{
+
+}

@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+    padding: 0;
+    max-height: 100vh;
+    background-image: url(/Bilder/Orangebackground.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.welcome h1{
+    position: absolute;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+    color: white;
+    top: 16%;
+    left: 20%;
+    text-align: center;
+}
+
+#startBtn{
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: orange;
+    background: black;
+    position: absolute;
+    top: 500px;
+    left: 620px;
+}
+
+#snakeLeft{
+    height: 200px;
+    width: 500px;
+    position: relative;
+    right: 150px;
+    top: -300px;
+    transform: rotate(90deg);
+    animation-name: snakedown;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes snakedown {
+    0% {
+        top: 0px;
+    }
+    100% {
+       top : 920px;
+    }
+
+}
+
+#snakeRight{
+    height: 200px;
+    width: 500px;
+    position: relative;
+    left: 1100px;
+    top: -500px;
+    transform: rotate(-90deg);
+    animation-name: snakeup;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes snakeup {
+    0% {
+        top: 1000px;
+    }
+    100% {
+       top : -700px;
+    }
+}
+

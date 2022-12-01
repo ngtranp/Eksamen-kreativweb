@@ -1,0 +1,143 @@
+body {
+    background-image: url(/Bilder/bakgrunn\ nebbdyr.jpeg);
+    background-size: cover;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.knapper{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    height: 100vh;
+  }
+
+.nebbdyrLyd{
+    position: absolute;
+    bottom: 5%;
+    right: 1%;
+}
+
+.bildeOm{
+    position: relative;
+    display: flex;
+    float: right;
+    width: 200px;
+    height: 185px;
+}
+
+
+.faktaBoksEn{
+    position: relative;
+    display: flex;
+    float: right;
+    background-color: rgb(51, 122, 192);
+    padding: 20px;
+    max-width: 500px;
+}
+
+.overskriftNebbdyr {
+    text-align: center;
+}
+
+
+.leggendeEgg img{
+    position: absolute;
+    width: 4%;
+    aspect-ratio: 1;
+    object-fit: contain;
+}
+
+.leggendeEgg .eggEn {
+    top: 70%;
+    left: 20%;
+    opacity: 0;
+    animation-name: leggEggEn, fadeIn;
+    animation-duration: 3s;
+    animation-iteration-count: forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+
+}
+
+@keyframes leggEggEn {
+    0%   { opacity: 0; }
+    100% { opacity: 1;}
+    100% {top: 85%;}
+    
+}
+
+.leggendeEgg .eggTo {
+    top: 75%;
+    left: 35%;
+    opacity: 0;
+    animation-name: leggEggTo;
+    animation-duration: 3s;
+    animation-iteration-count: forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 3.5s;
+
+}
+
+@keyframes leggEggTo {
+    0%   { opacity: 0; }
+    100% { opacity: 1;}
+    100% {top: 85%;}
+    
+}
+
+
+.leggendeEgg .eggTre {
+    top: 78%;
+    left: 50%;
+    opacity: 0;
+    animation-name: leggEggTre;
+    animation-duration: 3s;
+    animation-iteration-count: forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 4.3s;
+}
+
+@keyframes leggEggTre {
+    0%   { opacity: 0; }
+    100% { opacity: 1;}
+    100% {top: 85%;}
+    
+}
+
+.detNebbdyret{
+    position: absolute;
+    width: 24%;
+    aspect-ratio: 1.5;
+    top: 50%;
+    left: 6%;
+    animation-name: bevegendeNebbdyr;
+    animation-duration: 7s;
+    animation-iteration-count: forwards;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+@keyframes bevegendeNebbdyr{
+    0% {left: 6%}
+    50% {top: 58%}
+    100% {top: 60%}
+    100% {left: 60%}
+}
+
+.flytendeSkute{
+    position: absolute;
+    top: 45%;
+    left: 12%;
+    animation-name: bevegendeSkute;
+    animation-duration: 3s;
+    animation-iteration-count: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bevegendeSkute{
+    0% {left: 12%}
+    100% {left: 20%}
+}
+
